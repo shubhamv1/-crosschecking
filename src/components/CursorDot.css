@@ -1,0 +1,49 @@
+/* src/components/CursorDot.css */
+
+/* Define CSS variables for dot colors */
+:root {
+    --dot-color: rgba(227, 170, 13, 0.449);
+    --inner-dot-color: #3729f3;
+    --dot-hover-color: rgba(119, 237, 22, 0.8);
+    --inner-dot-hover-color: #f50057;
+  }
+  
+  .cursor-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 9999;
+  }
+  
+  .cursor-dot {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: var(--dot-color);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.s ease, background-color 0.3s ease;
+  }
+  
+  .cursor-dot-inner {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: var(--inner-dot-color);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: background-color 0.3s ease;
+  }
+  
+  .cursor-dot:hover {
+    background-color: var(--dot-hover-color);
+    transform: scale(1.5) translate(-50%, -50%);
+  }
+  
+  .cursor-dot:hover .cursor-dot-inner {
+    background-color: var(--inner-dot-hover-color);
+  }
+  

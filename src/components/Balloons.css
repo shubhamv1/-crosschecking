@@ -1,0 +1,45 @@
+.balloons-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+  }
+  
+  .balloon {
+    width: 50px;
+    height: 70px;
+    position: absolute;
+    bottom: 0;
+    background-color: transparent;
+    border-radius: 50%;
+    opacity: 0;
+  }
+  
+  .balloon-0 {
+    left: 10%;
+    background-color: #ff5f6d;
+  }
+  
+  .balloon-1 {
+    left: 30%;
+    background-color: #ffc371;
+  }
+  
+  .balloon-2 {
+    left: 50%;
+    background-color: #9fd3c7;
+  }
+  
+  .balloon-3 {
+    left: 70%;
+    background-color: #ffcb74;
+  }
+  
+  .balloon-4 {
+    left: 90%;
+    background-color: #84a9ac;
+  }
+  

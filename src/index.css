@@ -11,3 +11,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* src/index.css */
+body {
+  cursor: url('https://cdn.jsdelivr.net/gh/creative-tim-official/material-dashboard/assets/img/cursors/hand.cur'), auto;
+  transition: background-color 0.3s ease;
+}
+
+body:hover {
+  background-color: #f0f0f0;
+}
+
